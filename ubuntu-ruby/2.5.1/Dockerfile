@@ -13,3 +13,6 @@ RUN apt-get update
 RUN apt-get install sudo
 RUN sudo ln -sf bash /bin/sh
 RUN source /etc/default/locale
+
+RUN sudo apt-get install -y postgresql postgresql-contrib postgresql-client
+RUN sudo apt-get install -y libpq-dev
